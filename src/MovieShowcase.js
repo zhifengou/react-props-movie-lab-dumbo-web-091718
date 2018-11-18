@@ -10,7 +10,10 @@ export default class MovieShowcase extends Component {
       movieData.map(x=>
         <MovieCard poster={x.poster} title={x.title} IMDBRating={x.IMDBRating} genres={x.genres}/>
       )
+<<<<<<< HEAD
       )
+=======
+>>>>>>> a778bb4b785b8fbffb29d479f3f26d03a76f9c7a
   }
 
   render() {
