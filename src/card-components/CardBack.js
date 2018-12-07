@@ -26,10 +26,25 @@ export default class CardBack extends Component {
         <h3 className="title">{this.props.title}</h3>
         <span />
         { /* your rating element should go here -- you can invoke methods within JSX, à la: this.myMethod() */ }
+<<<<<<< HEAD
         {this.generateRatingElement()}
+=======
+        {
+          imgMapper[this.props.IMDBRating]
+        }
+>>>>>>> a778bb4b785b8fbffb29d479f3f26d03a76f9c7a
         <span />
         <h5 className="genres">{this.props.genres.join(", ")}</h5>
       </div>
     )
   }
 }
+// render() {
+//     return (
+//       <div className="movie-card">
+//         <img src={this.props.posterSrc} alt={this.props.title} />
+//         <h2>{this.props.title}</h2>
+//         <small>{this.props.genres.join(', ')}</small>
+//       </div>
+//     )
+//   }
